@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="RSEP__client-registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="RSEP__client-registration--UI.js"></script>
+</head>
+<body>
+    <section class="client-registration">
+
+        <nav class="client-registration__nav">
+            <ol>
+                <li id="personal-information" class="client-registration__nav--active" onclick="tab_selected(this.id)">
+                    <span>01</span> Personal Information
+                </li>
+                <li id="payment-information" onclick="tab_selected(this.id)">
+                    <span>02</span> Payment Information
+                </li>
+                <li id="financial-goals" onclick="tab_selected(this.id)">
+                    <span>03</span> Set Financial Goals
+                </li>
+            </ol>
+        </nav>
+
+        <form class="client-registration__form">
+
+            <section class="client-registration__form__personal-information">
+                <h2>Personal Information</h2>   
+                <p>Please enter your information and proceed to the next 
+                step so we can build your account.</p>
+                <div class="client-registration__form__personal-information--row">
+                    <label for="fname"><span>First Name</span>
+                        <input type="text" id="fname" name="fname" />
+                    </label>
+                    <label for="mname"><span>Middle Name</span>
+                        <input type="text" id="mname" name="mname" />
+                    </label>
+                    <label for="lname"><span>Last Name</span>
+                        <input type="text" id="lname" name="lname" />
+                    </label>
+                </div>
+                <label for="mobile"><span>Mobile Number</span>
+                    <input type="text" name="mobile" id="mobile" />
+                </label>
+                <label for="alt-phone"><span>Alternative Phone Number</span>
+                    <input type="text" name="alt-phone" id="alt-phone" />
+                </label>
+                <label for="email"><span>Email</span>
+                    <input type="text" name="email" id="email" />
+                </label>
+                <label for="password"><span>New Password</span>
+                    <input type="password" name="password" id="password">
+                </label>
+                <label for="confirm-password"><span>Confirm Password</span>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                </label>
+                <label class="client-registration__form--label"><span>Birth Date: </span>
+                    <input type="date" id="birthdate" name="birthdate" min="1900-01-29" max="2100-01-01"/>
+                </label>
+                <Label><span>Social Security Number</span>
+                    <input type="text" id="ssn" name="ssn" placeholder="SSN" />
+                </Label>
+            </section>
+
+            <section class="client-registration__form__payment-information">
+                <h2>Payment Information</h2>   
+                <p>Please enter your information and proceed to the next 
+                step so we can build your account.</p>
+                <div class="client-registration__form__payment-information--row">
+                    <label for="paymen-to"><span>Payment To</span>
+                        <input type="text" id="payment-to" name="payment-to" />
+                    </label>
+                    <label class="client-registration__form--label"><span>Payment Date: </span>
+                        <input type="date" id="payment-date" name="payment-date"/>
+                    </label>
+                    <label for="receipt-number"><span>Receipt Number</span>
+                        <input type="text" name="receipt-number" id="receipt-number" />
+                    </label>
+                </div>
+                <label for="payment-method"><span>Payment Method</span>
+                    <select name="payment-method" id="payment-method">
+                        <option value="payment-method-1">GCash</option>
+                        <option value="payment-method-2">Palawan Express</option>
+                        <option value="payment-method-3">7/11</option>
+                        <option value="payment-method-4">Mini-Stop</option>
+                      </select>
+                </label>
+                <div class="client-registration__form__payment-information--row">
+                    <label for="received-from"><span>Received From</span>
+                        <input type="text" id="received-from" name="received-from" />
+                    </label>
+                    <label for="received-by"><span>Received By</span>
+                        <input type="text" id="received-by" name="received-by" />
+                    </label>
+                </div>
+                <label for="notes"><span>Notes</span>
+                    <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+                </label>
+            </section>
+
+            <section class="client-registration__form__financial-goals">
+                <h2>Financial Goals</h2>   
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur at exercitationem aut modi dolorum consectetur.</p>
+                <div class="client-registration__form__financial-goals--row">
+                    <label for="monthly-salary"><span>Monthly Salary</span>
+                        <input type="text" id="monthly-salary" name="monthly-salary" />
+                    </label>
+                    <label for="budget"><span>Monthly Investment Budget</span>
+                        <input type="text" id="budget" name="budget" />
+                    </label>
+                    <label for="expected-earnings"><span>Expected Earnings</span>
+                        <input type="text" id="expected-earnings" name="expected-earnings" />
+                    </label>
+
+                </div>
+                
+                <label><span>Investment Duration</span>
+                    <input type="date" id="investment-start-date" name="investment-start-date" min="1900-01-29" max="2100-01-01"/>
+                    to
+                    <input type="date" id="investment-end-date" name="investment-end-date" min="1900-01-29" max="2100-01-01"/>
+                </label>
+                <label for="plan"><span>Plan</span>
+                    <select name="plan" id="plan">
+                        <option value="plan-1">Standard</option>
+                        <option value="plan-2">Premium</option>
+                        <option value="plan-3">Blaze 99 Octane</option>
+                     </select>
+                </label>
+            </section>
+
+            <button id="next" name="next">></button>
+        </form>
+    </section>
+</body>
+</html>

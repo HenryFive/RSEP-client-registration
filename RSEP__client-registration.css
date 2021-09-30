@@ -1,0 +1,177 @@
+body {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#4a50a6), to(#6bc7ca));
+  background-image: linear-gradient(to bottom right, #4a50a6, #6bc7ca);
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.client-registration {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1100px;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.client-registration__nav {
+  width: 30%;
+  height: inherit;
+  background-color: #3f3f61;
+  color: #fff;
+}
+
+.client-registration__nav ol {
+  padding-left: 0;
+}
+
+.client-registration__nav li {
+  list-style: none;
+  line-height: 2em;
+  padding: 20px;
+  width: calc(100%-40px);
+  border-bottom: solid 1px #a5a5a5;
+  color: #a5a5a5;
+}
+
+.client-registration__nav li span {
+  background-color: #a5a5a5;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 42px;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+}
+
+.client-registration__nav li:hover {
+  cursor: pointer;
+  background-color: #4e4e72;
+}
+
+.client-registration__nav li:active {
+  background-color: #333353;
+}
+
+.client-registration__nav .client-registration__nav--active {
+  color: #fff;
+}
+
+.client-registration__nav .client-registration__nav--active span {
+  background-color: #49ae3c;
+}
+
+.client-registration__form {
+  width: 70%;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  background-color: #fff;
+  color: gray;
+  padding: 0 25px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.client-registration__form label {
+  position: relative;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  margin: 20px 5px 5px 5px;
+  padding: 15px 5px 5px 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+}
+
+.client-registration__form label span {
+  position: absolute;
+  top: -15px;
+  left: 5px;
+  background-color: #fff;
+  font-size: 0.95em;
+  padding: 5px;
+}
+
+.client-registration__form label input, .client-registration__form label select, .client-registration__form label textarea {
+  border: none;
+  background-color: none;
+  color: inherit;
+  font-size: inherit;
+  margin: 3px;
+}
+
+.client-registration__form label input:focus, .client-registration__form label select:focus, .client-registration__form label textarea:focus {
+  outline: none;
+}
+
+.client-registration__form button {
+  margin: 5px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #49ae3c;
+  color: #fff;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+
+.client-registration__form__personal-information, .client-registration__form__payment-information, .client-registration__form__financial-goals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.client-registration__form__personal-information h2, .client-registration__form__payment-information h2, .client-registration__form__financial-goals h2 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.client-registration__form__personal-information p, .client-registration__form__payment-information p, .client-registration__form__financial-goals p {
+  text-align: center;
+}
+
+.client-registration__form__personal-information--row, .client-registration__form__payment-information--row, .client-registration__form__financial-goals--row {
+  margin: 50px 0 25px;
+}
+
+.client-registration__form__personal-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.client-registration__form__payment-information {
+  display: none;
+}
+
+.client-registration__form__financial-goals {
+  display: none;
+}
+
+.client-registration__form__financial-goals input[type="date"] {
+  margin: 0 20px;
+}
+/*# sourceMappingURL=RSEP__client-registration.css.map */
