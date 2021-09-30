@@ -134,6 +134,14 @@ body {
   margin-bottom: 15px;
 }
 
+.client-registration__form button:hover {
+  background-color: #61b855;
+}
+
+.client-registration__form button:active {
+  background-color: #3e9133;
+}
+
 .client-registration__form__personal-information, .client-registration__form__payment-information, .client-registration__form__financial-goals {
   display: -webkit-box;
   display: -ms-flexbox;

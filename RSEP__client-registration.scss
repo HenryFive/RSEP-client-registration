@@ -102,6 +102,11 @@ body{
             margin-left: auto;
             margin-bottom: 15px;
         }
+        button:hover{
+            background-color: #61b855;
+        }
+        button:active{
+            background-color: #3e9133;        }
         &__personal-information, &__payment-information, &__financial-goals{
             display: flex;
             flex-direction: column;

@@ -16,13 +16,13 @@
 
         <nav class="client-registration__nav">
             <ol>
-                <li id="personal-information" class="client-registration__nav--active" onclick="tab_selected(this.id)">
+                <li id="personal-information" class="client-registration__nav--active" onclick="tabSelected(this.id)">
                     <span>01</span> Personal Information
                 </li>
-                <li id="payment-information" onclick="tab_selected(this.id)">
+                <li id="payment-information" onclick="tabSelected(this.id)">
                     <span>02</span> Payment Information
                 </li>
-                <li id="financial-goals" onclick="tab_selected(this.id)">
+                <li id="financial-goals" onclick="tabSelected(this.id)">
                     <span>03</span> Set Financial Goals
                 </li>
             </ol>
@@ -134,7 +134,7 @@
                 </label>
             </section>
 
-            <button id="next" name="next">></button>
+            <button id="next" name="next" onclick="nextPage()">></button>
         </form>
     </section>
 </body>
