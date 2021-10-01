@@ -122,16 +122,14 @@ body {
 }
 
 .client-registration__form button {
-  margin: 5px;
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 70px;
+  height: 30px;
   border: none;
   background-color: #49ae3c;
   color: #fff;
   margin-left: auto;
   margin-bottom: 15px;
+  border-radius: 5px;
 }
 
 .client-registration__form button:hover {

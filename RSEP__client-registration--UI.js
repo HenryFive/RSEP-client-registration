@@ -1,4 +1,5 @@
-const currentPage = "personal-information";
+let currentPage = "personal-information";
+nextButton = document.querySelector(".client-registration__form--next-btn");
 
 function tabSelected(li_id){
 
@@ -13,27 +14,29 @@ function tabSelected(li_id){
 
     if(li_id=="personal-information"){
         document.querySelector(".client-registration__form__personal-information").style.display = "flex";
+        nextButton.innerHTML = "Next";        
         currentPage = li_id;
     }
     else if(li_id=="payment-information"){
         document.querySelector(".client-registration__form__payment-information").style.display = "flex";
+        nextButton.innerHTML = "Next";
         currentPage = li_id;
     }
     else if(li_id=="financial-goals"){
         document.querySelector(".client-registration__form__financial-goals").style.display = "flex";
+        nextButton.innerHTML = "Submit";
         currentPage = li_id;
     }
 
 }
 
-function nextPage(e){
-    e.preventDefault();
-    if(currentPage == "personal-information"){
 
+nextButton.addEventListener("click", function(){
+    if(currentPage == "personal-information"){
         tabSelected("payment-information");
-        console.log("next");
+        
     }
-    else if(currentPage == "payment"){
+    else if(currentPage == "payment-information"){
         tabSelected("financial-goals");
     }
-}
+});
